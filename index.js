@@ -9,6 +9,7 @@ var addMatchArr = JSON.parse(localStorage.getItem("schedule"))||[];
 
 function addmatchfunc(){
     event.preventDefault()
+    // console.log("click")
    
     var addMatchObj = {};
 
@@ -30,7 +31,7 @@ function addmatchfunc(){
     addMatchArr.push(addMatchObj)
 
     localStorage.setItem("schedule",JSON.stringify(addMatchArr))
-    window.location.reload()
+    // window.location.reload()
 
 // console.log(addMatchObj)
 // console.log(addMatchArr)
